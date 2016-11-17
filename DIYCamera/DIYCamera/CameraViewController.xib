@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETx-4Q-lOi">
+                    <rect key="frame" x="154" y="569" width="66" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="7Yy-2V-Pni"/>
+                        <constraint firstAttribute="height" constant="66" id="OyC-Rm-Vnc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                    <state key="normal" title="✓" backgroundImage="ic_waterprint_shutter_pressed"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-Xk-qM2" userLabel="取消">
+                    <rect key="frame" x="16" y="586" width="32" height="32"/>
+                    <state key="normal" image="ic_waterprint_close"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2U-HU-r2p" userLabel="相机旋转">
+                    <rect key="frame" x="327" y="586" width="32" height="32"/>
+                    <state key="normal" image="ic_waterprint_revolve"/>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWm-9I-xZr" userLabel="分享">
+                    <rect key="frame" x="327" y="586" width="32" height="32"/>
+                    <state key="normal" image="ic_waterprint_share"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-BK-XjV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="c2U-HU-r2p" firstAttribute="centerY" secondItem="ETx-4Q-lOi" secondAttribute="centerY" id="1QF-r1-pef"/>
+                <constraint firstItem="ETx-4Q-lOi" firstAttribute="top" secondItem="e7C-BK-XjV" secondAttribute="bottom" constant="32" id="5EP-wk-sis"/>
+                <constraint firstItem="e7C-BK-XjV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9pC-dl-kJs"/>
+                <constraint firstItem="gZf-Xk-qM2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="B1z-6j-tjW"/>
+                <constraint firstAttribute="trailing" secondItem="c2U-HU-r2p" secondAttribute="trailing" constant="16" id="Fq1-0k-edO"/>
+                <constraint firstItem="gZf-Xk-qM2" firstAttribute="centerY" secondItem="ETx-4Q-lOi" secondAttribute="centerY" id="IV3-zc-TJu"/>
+                <constraint firstItem="c2U-HU-r2p" firstAttribute="centerX" secondItem="kWm-9I-xZr" secondAttribute="leading" constant="16" id="O4t-C2-NLN"/>
+                <constraint firstAttribute="bottom" secondItem="ETx-4Q-lOi" secondAttribute="bottom" constant="32" id="R6U-Km-KvV"/>
+                <constraint firstItem="ETx-4Q-lOi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TnS-6n-G2T"/>
+                <constraint firstItem="kWm-9I-xZr" firstAttribute="centerY" secondItem="ETx-4Q-lOi" secondAttribute="centerY" id="duO-oX-Wxs"/>
+                <constraint firstAttribute="trailing" secondItem="e7C-BK-XjV" secondAttribute="trailing" id="edK-Dl-DaR"/>
+                <constraint firstItem="e7C-BK-XjV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mxk-8l-NmR"/>
+            </constraints>
+            <point key="canvasLocation" x="78.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_waterprint_close" width="32" height="32"/>
+        <image name="ic_waterprint_revolve" width="32" height="32"/>
+        <image name="ic_waterprint_share" width="32" height="32"/>
+        <image name="ic_waterprint_shutter_pressed" width="66" height="66"/>
+    </resources>
+</document>
