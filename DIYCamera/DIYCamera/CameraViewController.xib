@@ -50,31 +50,37 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-BK-XjV" userLabel="预览视图">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6j-O4-Yu6" userLabel="左侧快门视图">
-                            <rect key="frame" x="-239.5" y="0.0" width="187.5" height="537"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6j-O4-Yu6" userLabel="左侧快门视图" customClass="CameraMaskView">
+                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="537"/>
                             <subviews>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ic_shutter_center_left" translatesAutoresizingMaskIntoConstraints="NO" id="C3L-qc-ehx">
                                     <rect key="frame" x="135.5" y="216" width="104" height="104"/>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="C3L-qc-ehx" firstAttribute="centerX" secondItem="h6j-O4-Yu6" secondAttribute="trailing" id="B95-2H-TKO"/>
                                 <constraint firstItem="C3L-qc-ehx" firstAttribute="centerY" secondItem="h6j-O4-Yu6" secondAttribute="centerY" id="X3O-QV-BGD"/>
                             </constraints>
+                            <connections>
+                                <outlet property="imageView" destination="C3L-qc-ehx" id="4MB-xC-Til"/>
+                            </connections>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWr-0F-Hyn" userLabel="右侧快门视图">
-                            <rect key="frame" x="427" y="0.0" width="187.5" height="537"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWr-0F-Hyn" userLabel="右侧快门视图" customClass="CameraMaskView">
+                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="537"/>
                             <subviews>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ic_shutter_center_right" translatesAutoresizingMaskIntoConstraints="NO" id="gvq-2F-HNU">
                                     <rect key="frame" x="-52" y="216" width="104" height="104"/>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="gvq-2F-HNU" firstAttribute="centerY" secondItem="qWr-0F-Hyn" secondAttribute="centerY" id="35J-SO-gvP"/>
                                 <constraint firstItem="gvq-2F-HNU" firstAttribute="centerX" secondItem="qWr-0F-Hyn" secondAttribute="leading" id="N2k-l8-cH2"/>
                             </constraints>
+                            <connections>
+                                <outlet property="imageView" destination="gvq-2F-HNU" id="hVp-Ya-ILX"/>
+                            </connections>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -90,6 +96,12 @@
                         <constraint firstItem="h6j-O4-Yu6" firstAttribute="width" secondItem="e7C-BK-XjV" secondAttribute="width" multiplier="0.5" id="kB4-KV-6ud"/>
                         <constraint firstAttribute="trailing" secondItem="qWr-0F-Hyn" secondAttribute="trailing" priority="999" id="up1-74-kpC"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Brq-7w-mY0"/>
+                            <exclude reference="cGl-zs-VyF"/>
+                        </mask>
+                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

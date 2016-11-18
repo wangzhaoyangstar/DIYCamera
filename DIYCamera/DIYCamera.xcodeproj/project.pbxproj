@@ -15,6 +15,8 @@
 		E1D08F2B1DDDD35E007F74AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D08F291DDDD35E007F74AB /* LaunchScreen.storyboard */; };
 		E1D08F351DDDD5AD007F74AB /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D08F331DDDD5AD007F74AB /* CameraViewController.m */; };
 		E1D08F361DDDD5AD007F74AB /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D08F341DDDD5AD007F74AB /* CameraViewController.xib */; };
+		E1D08F391DDDECA9007F74AB /* CameraMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D08F381DDDECA9007F74AB /* CameraMaskView.m */; };
+		E1D08F3E1DDDEF5A007F74AB /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D08F3D1DDDEF5A007F74AB /* UIColor+CZAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,11 @@
 		E1D08F321DDDD5AD007F74AB /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		E1D08F331DDDD5AD007F74AB /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		E1D08F341DDDD5AD007F74AB /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		E1D08F371DDDECA9007F74AB /* CameraMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraMaskView.h; sourceTree = "<group>"; };
+		E1D08F381DDDECA9007F74AB /* CameraMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraMaskView.m; sourceTree = "<group>"; };
+		E1D08F3B1DDDEF5A007F74AB /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		E1D08F3C1DDDEF5A007F74AB /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		E1D08F3D1DDDEF5A007F74AB /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +70,13 @@
 		E1D08F1A1DDDD35E007F74AB /* DIYCamera */ = {
 			isa = PBXGroup;
 			children = (
+				E1D08F3A1DDDEF5A007F74AB /* Additions */,
 				E1D08F1E1DDDD35E007F74AB /* AppDelegate.h */,
 				E1D08F1F1DDDD35E007F74AB /* AppDelegate.m */,
 				E1D08F321DDDD5AD007F74AB /* CameraViewController.h */,
 				E1D08F331DDDD5AD007F74AB /* CameraViewController.m */,
+				E1D08F371DDDECA9007F74AB /* CameraMaskView.h */,
+				E1D08F381DDDECA9007F74AB /* CameraMaskView.m */,
 				E1D08F341DDDD5AD007F74AB /* CameraViewController.xib */,
 				E1D08F211DDDD35E007F74AB /* ViewController.h */,
 				E1D08F221DDDD35E007F74AB /* ViewController.m */,
@@ -85,6 +95,16 @@
 				E1D08F1C1DDDD35E007F74AB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1D08F3A1DDDEF5A007F74AB /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				E1D08F3B1DDDEF5A007F74AB /* CZAdditions.h */,
+				E1D08F3C1DDDEF5A007F74AB /* UIColor+CZAddition.h */,
+				E1D08F3D1DDDEF5A007F74AB /* UIColor+CZAddition.m */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +182,8 @@
 			files = (
 				E1D08F231DDDD35E007F74AB /* ViewController.m in Sources */,
 				E1D08F351DDDD5AD007F74AB /* CameraViewController.m in Sources */,
+				E1D08F3E1DDDEF5A007F74AB /* UIColor+CZAddition.m in Sources */,
+				E1D08F391DDDECA9007F74AB /* CameraMaskView.m in Sources */,
 				E1D08F201DDDD35E007F74AB /* AppDelegate.m in Sources */,
 				E1D08F1D1DDDD35E007F74AB /* main.m in Sources */,
 			);
