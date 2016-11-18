@@ -7,13 +7,25 @@
 //
 
 #import "CameraViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface CameraViewController ()
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *maskViewConstraints;
 
 @end
 
-@implementation CameraViewController
+@implementation CameraViewController {
+    //四个对象
+    ///拍摄会话
+    AVCaptureSession *_caputerSession;
+    ///输入设备
+    AVCaptureDeviceInput *_inputdevice;
+    ///图像输出设备
+    AVCapturePhotoOutput *_photoOutput;
+    ///取景框-预览视图
+    AVCaptureVideoPreviewLayer *_previewLayer;
+       
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

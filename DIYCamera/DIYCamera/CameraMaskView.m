@@ -41,7 +41,7 @@
         [[UIColor cz_colorWithHex:0x1a1a1a] setStroke];
         [path stroke];
     }
-    CGContextClearRect(UIGraphicsGetCurrentContext(),_imageView.frame);
+    CGContextClearRect(UIGraphicsGetCurrentContext(),CGRectInset(_imageView.frame, 1, 1));
 }
 
 
